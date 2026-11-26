@@ -19,4 +19,14 @@ export interface Patient {
   dateOfBirth?: string;
 }
 
-export type PatientFormValues = Omit<Patient, "id" | "entries">;
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
+export interface Entry {
+}
+
+export interface PatientDetails extends Patient {
+  ssn: string;
+  dateOfBirth: string;
+  entries: Entry[];
+}
+
+export type PatientFormValues = Omit<Patient, "id">;
