@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+  margin: 1rem 2rem;
+}
+
+.error {
+  color: red;
+}
+
+form div {
+  margin: 0.4rem 0;
+}
